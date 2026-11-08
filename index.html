@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neural Pong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><span>NEURAL</span> PONG <small>adaptive arcade AI</small></header>
+    <section class="hud">
+      <div>YOU <b id="playerScore">0</b></div>
+      <div class="read">AI READ <b id="read">CALIBRATING</b><i id="confidence">0%</i></div>
+      <div><b id="aiScore">0</b> AI</div>
+    </section>
+    <canvas id="game" width="860" height="480" aria-label="Neural Pong game"></canvas>
+    <p>Move: <kbd>W</kbd><kbd>S</kbd> or <kbd>↑</kbd><kbd>↓</kbd> · First to 7 wins</p>
+    <button id="restart">Restart match</button>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
